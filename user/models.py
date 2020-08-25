@@ -9,4 +9,3 @@ class User(db.Model):
     gender = db.Column(db.Enum('male', 'female', 'unknow'), default='unknow')
     city = db.Column(db.String(10), default='中国')
     phone = db.Column(db.String(16))
-    created = db.Column(db.DateTime, nullable=False) # 用户注册时间

@@ -61,4 +61,4 @@ def login_required(view_func):
             return redirect('/user/login')
         else:
             return view_func(*args, *kwargs)
-    return check_session()
+    return check_session

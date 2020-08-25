@@ -7,21 +7,3 @@
 <hr/>
 
 <!--  #######   -->
-<figure class="figure">
-  <img src="{{ user.avatar }}" class="figure-img img-fluid rounded" width="200px" />
-</figure>
-
-<ul class="list-group">
-  {% if user.gender == 'male' %}
-  <li class="list-group-item"><strong>性别</strong>：小哥哥</li>
-  {% elif user.gender == 'female' %}
-  <li class="list-group-item"><strong>性别</strong>：小姐姐</li>
-  {% else %}
-  <li class="list-group-item"><strong>性别</strong>：保密</li>
-  {% endif %}
-
-  <li class="list-group-item"><strong>生日</strong>：{{ user.birthday }}</li>
-  <li class="list-group-item"><strong>城市</strong>：{{ user.city }}</li>
-  <li class="list-group-item"><strong>手机号码</strong>：{{ user.phone }}</li>
-</ul>
-{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <style>
+            .leader{
+                width: 1000px;
+                height: 200px;
+                background-color: cornflowerblue;
+                margin: 0 auto;
+                }
+            .bottle{
+                width: 1000px;
+                height: 600px;
+                background-color: gainsboro;
+                margin: 0 auto;
+            }
+            .leftside{
+                width: 300px;
+                height: 600px;
+                background-color: yellow;
+                margin: 0;
+                float: left;
+            }
+            .content{
+                width:700px;
+                height: 600px;
+                background-color: tomato;
+                float: left;
+            }
+      </style>
+    </head>
+
+    <body>
+         <!-- 导航栏 -->
+         <div class="leader">
+             {% block head %}{% endblock %}
+         </div>
+         <!--容器：内容栏、边栏-->
+         <div class="bottle">
+            <!--边栏-->
+             <div class="leftside">
+                 {% block leftside %}{% endblock %}
+             </div>
+                <!-- 内容栏 -->
+             <div class="content">
+                 {% block content %}{% endblock %}
+             </div>
+         </div>
+    </body>

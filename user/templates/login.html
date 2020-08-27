@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+        <div>
+            {% if err %}
+                {{ err }}
+            {% endif %}
+        </div>
+        <div>
+            <form action="/user/login" method="POST">
+                用户名：<input type="text" name="username" placeholder="请输入姓名">
+                <br/>
+                密码：<input type="password" name="password" placeholder="请输入密码">
+                <br/>
+                <input type="submit" name="submit">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

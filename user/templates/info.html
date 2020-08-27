@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
+
 <!-- 填充content -->
 {% block content %}
-<h1>{{ user.nickname }}</h1>
-
-<hr/>
-
-<!--  #######   -->
+    <h1>{{ user.username }}</h1><hr/>
+    <ul>
+        <li>用户名：{{ user.username }}</li>
+        <li>城市：{{ user.city }}</li>
+        <li>手机号码：{{ user.phone }}</li>
+    </ul>
+{% endblock %}

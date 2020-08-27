@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% if err %}
+    {{ err }}
+{% endif %}
+{% block content %}
+    <form action="/weibo/publish" method="post">
+        <div>
+            <textarea name="content" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="发表微博">
+        </div>
+    </form>
+{% endblock %}

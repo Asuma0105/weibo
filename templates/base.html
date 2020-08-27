@@ -35,7 +35,15 @@
     <body>
          <!-- 导航栏 -->
          <div class="leader">
-             {% block head %}{% endblock %}
+             <a href="/weibo/show">世界</a>
+             <a href="/weibo/change">我的首页</a>
+             <a href="">关注的人</a>
+             <a href="">粉丝列表</a>
+             {% if uid %}
+                你好，{{ user.username }}
+                <a href="/weibo/publish">发表微博</a>
+                <a href="/user/logout">退出登录</a>
+             {% endif %}
          </div>
          <!--容器：内容栏、边栏-->
          <div class="bottle">

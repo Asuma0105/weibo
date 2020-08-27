@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <a href="">首页</a>
+    <a href="">个人信息</a>
+{% endblock %}
+
+{% block content %}
+    {% for i in article.article %}
+    <a href="">{{ i }}</a>
+{% endblock %}
